@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+  
+}
+#Display-pic{
+    border-radius: 50%;
+   
+    width: 425px;
+    height: 400px;
+
+    animation: glow 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 20px 3px #2cc885;
+    }
+    100%{
+        box-shadow: 0 0 35px 5px #2cc885;
+    }
+}
+#Grad-pic{
+    border-radius: 20px;
+}
+nav{
+    background-color: white;
+}
+
+#divider{
+    margin-bottom: 20%;
+}
+#divider-1{
+    margin-bottom: 90px;
+}
+#divider-2{
+    margin-bottom: 130px;
+}
+#g-line{
+    animation-name: Dash;
+    animation-duration: 1.2s;
+    animation-delay: 2.5s;
+ 
+    animation-fill-mode: forwards;
+
+    max-width: 320px;
+    opacity: 0;
+}
+.card-body,.card{
+    border-radius: 15px;
+}
+#Socmed{
+    margin-right: 150px;
+    margin-top: 10px;
+}
+#Socmed ul li{
+    padding: 0 10px;
+}
+#Socmed ul li a{
+    font-size: 50px;
+    color: white;
+}
+#Socmed ul li a:hover{
+    transition-duration: 0.2s;
+   color: #2cc885;
+   text-shadow: 0 0 8px #2cc885;
+}
+#CV{
+    opacity: 0;
+
+    animation-name: Show;
+    animation-duration: 1s;
+    animation-delay: 4.6s;
+    animation-fill-mode: forwards;
+}
+#CV a:hover{
+    box-shadow: 0 0 10px 5px #2cc885;
+}
+#about-head h2{
+    position: relative;
+}
+#about-head p, em, #Works div p{
+    color: lightgray;
+}
+#about-head h2::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #2cc885;
+    left: 33%;
+    top: 50%;
+    position: absolute;
+}
+#about-head h2::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #2cc885;
+    left: 59%;
+    top: 50%;
+    position: absolute;
+}
+#work-head h2::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #2cc885;
+    left: 33%;
+    top: 50%;
+    position: absolute;
+}
+dd{
+    text-align: center;
+    width: 125px;
+    padding: 3px 5px;
+    margin: 10px 0px;
+    border-radius: 1px;
+    color: lightgray;
+    background-color: gray;
+}
+dl li {
+    color: lightgray;
+}
+#skills #t-skill i{
+    font-size: 95px;
+    margin-bottom: 5px;
+
+    transition: 0.3s;
+}
+#skills #t-skill:nth-child(1) i{
+    color: #f06529;
+}
+#skills #t-skill:nth-child(2) i{
+    color: #2965f1;
+}
+#skills #t-skill:nth-child(3) i{
+    color: #F0DB4F;
+}
+#skills #t-skill:nth-child(4) i{
+    color: #563d7c;
+}
+#skills #t-skill:nth-child(5) i{
+    color: #0769ad;
+}
+#skills #t-skill:nth-child(6) i{
+    color: #474A8A;
+}
+#skills #t-skill:nth-child(7) i{
+    color: white;
+}
+#skills #t-skill i:hover{
+    color: #2cc885;
+    text-shadow: 0 0 8px #2cc885;
+}
+#Works #card-1 .col-6 .card-body:hover{
+    animation: glow 2s infinite;
+    animation-direction: alternate;
+}
+#badge{
+    margin: 0 5px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+#badge i{
+    margin: 0 2px;
+}
+#badge:nth-of-type(1){
+    background-color: #ff9248;
+}
+#badge:nth-of-type(2){
+    background-color: #2965f1;
+}
+#badge:nth-of-type(3){
+    background-color: #563d7c;
+}
+#badge:nth-of-type(4){
+    background-color: #0769ad;
+}
+#badge:nth-of-type(5){
+    background-color: #474A8A;
+}
+@keyframes Show {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Dash {
+    0%{
+        width: 0px;
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        width: 320px;
+        opacity: 1;
+    }
+}
